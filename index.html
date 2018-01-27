@@ -1,8 +1,16 @@
 <html>
 <head>
+	<script type="text/javascript" src="script.js"></script>
 <title>Simple hello world</title>
 </head>
 <body>
 <p>Hello</p>
+<p class="pm">
+<script type="text/javascript">
+	url = "http://api-ios.origins-china.cn:8080/topdata/getTopDetail?id=855019";
+	var resp = GETJSON(url);
+	document.write(resp);
+</script>
+</p>
 </body>
 </html>
