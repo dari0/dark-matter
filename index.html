@@ -7,9 +7,13 @@
 	<p>Hello</p>
 	<p class="pm">
 		<script type="text/javascript">
+		      while(true){
+			setTimeout(function(){
 			window.addEventListener('devicelight', function(event) {
 				document.write("Testing devicelight:" + event.value);
 			});
+								     },500);
+			}
 	/*
 	url = "";
 	var resp = GETJSON(url);
