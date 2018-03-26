@@ -1,23 +1,21 @@
 <html>
 <head>
-	<script type="text/javascript" src="script.js"></script>
-<title>Simple hello world</title>
+	<script type="text/javascript" src="script.js?a=1script>
+	<title>Simple hello world</title>
 </head>
 <body>
-<p>Hello</p>
-<p class="pm">
-<script type="text/javascript">
-document.write("Testing devicelight:");	
-window.addEventListener('devicelight', function(event) {
-  //console.log(event.value);	
-	document.write(event.value);
-});
+	<p>Hello</p>
+	<p class="pm">
+		<script type="text/javascript">
+			window.addEventListener('devicelight', function(event) {
+				document.write("Testing devicelight:" + event.value);
+			});
 	/*
 	url = "";
 	var resp = GETJSON(url);
 	document.write(resp);
 	*/
-</script>
-</p>
+		</script>
+	</p>
 </body>
 </html>
