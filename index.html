@@ -7,6 +7,10 @@
 <p>Hello</p>
 <p class="pm">
 <script type="text/javascript">
+window.addEventListener('devicelight', function(event) {
+  //console.log(event.value);
+	document.write(event.value);
+});
 	/*
 	url = "";
 	var resp = GETJSON(url);
